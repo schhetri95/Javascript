@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#header1{
+	background-image: url("header2.jpg");
+	background-size: 300px 100px;
+	text-align:center;
+	color: black;
+	line-height: 30%;
+}
+body {
+  background-color: wheat;
+}
+.collapsible {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family: "Times New Roman, Times, serif";
+}
+  
+}
+<body>
+	</head>
+	</style>
+	<div id="header1">
+	<br>
+		<h1>Shilpi Chhetri </h1>
+		<a href="https://www.linkedin.com/in/shilpi-chhetri/" style="color:navy">https://www.linkedin.com/in/shilpi-chhetri/</a>
+		<p style="color:navy"> 7104 Saint Denis, Montreal QC H2S2S4| C: 5146215692 | shilpiuit@gmail.com</p>
+		<br>
+	</div>
+	
+	<br>
+	<button class="collapsible">SKILLS AND QUALIFICATIONS</button>
+	<div class="content">
+	<pre >
+	<b>Programming Languages		|</b> 		• Java • Python • COBOL • ACMS • DB2SQL• HTML
+	<b>Design and analysis of Software	|</b>		• Use Cases •Domain Models• State Machine Diagrams • Sequence Diagrams• Context Diagrams• Activity Diagrams
+							• Design Patterns• Architectural Patterns Processes
+	<b>Processes			|</b> 		•SDLC •Waterfall model •RUP •Agile Methodology •Project Management •Software Maintenance
+	<b>Framework and Tools		| </b>		•Eclipse •MS Office Suite • HP ALM • Remedy • SOAP UI •Junit •HPSM •Visio
+	<b>Others				|</b>		•Git •GitHub
+	<b>Languages 			| </b>		•English (Fluent)
+	<b>Personal Qualities		|</b>		•Fluent and smooth communication and presentation skills •Strong Strategic and analytical thinking •Ability to prioritize tasks 
+							•ability to work under a time pressured environment • Team player
+	</pre>
+	</div>
+	<br>
+	<br>
+	<button class="collapsible">EDUCATION</button>
+	<div class="content">
+	<ul style="list-style-type:disc;">
+	<li><b>Master of Engineering in Software Engineering </b><br>
+	Concordia University, Montreal, QC, CA (2017-2018)</li>
+	<li><b>Bachelors of Technology in Computer Science and Technology</b><br>
+	Uttarakhand Technical University, Dehradun, India (2008-2012)</li>
+	</div>
+	
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} 
+				else {
+				content.style.display = "block";
+				}
+			});
+		}
+</script>
+</body>
+</html>
